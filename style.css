@@ -3797,3 +3797,47 @@ nav {
     }
 }
 
+/* Container tombol */
+.btn-container1 {
+  display: flex;
+  justify-content: flex-start; /* dorong tombol ke kanan */
+  gap: 15px; /* jarak antar tombol */
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+/* Tombol utama (biru-pink gradient) */
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #ff69b4 100%);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
+}
+
+/* Tombol sekunder (outline style) */
+.btn-secondary {
+  background: transparent;
+  border: 2px solid #667eea;
+  color: #667eea;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-2px);
+}
+
