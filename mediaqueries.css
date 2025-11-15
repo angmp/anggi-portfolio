@@ -3143,3 +3143,571 @@ nav {
         position: relative;
     }
 }
+/* ========== RESPONSIVE DESIGN - TANPA MENGUBAH STYLING YANG SUDAH ADA ========== */
+
+/* Large Desktop (1200px and up) - Default styling yang sudah ada */
+
+/* Medium Desktop (992px - 1199px) */
+@media only screen and (max-width: 1199px) {
+    .section-container {
+        max-width: 960px;
+        padding: 0 20px;
+    }
+    
+    .hero {
+        padding: 120px 60px 80px;
+    }
+    
+    .projects-section {
+        padding: 100px 60px;
+    }
+    
+    .profile-container {
+        width: 360px;
+        height: 360px;
+    }
+    
+    .profile-pic {
+        width: 320px;
+        height: 320px;
+    }
+}
+
+/* Tablet Landscape (768px - 991px) */
+@media only screen and (max-width: 991px) {
+    /* Navigation */
+    .nav-links {
+        gap: 30px;
+    }
+    
+    nav {
+        padding: 25px 40px;
+    }
+    
+    /* Hero Section */
+    .hero {
+        padding: 120px 40px 60px;
+        gap: 40px;
+    }
+    
+    .hero-title {
+        font-size: clamp(45px, 7vw, 80px);
+    }
+    
+    .profile-container {
+        width: 320px;
+        height: 320px;
+    }
+    
+    .profile-pic {
+        width: 280px;
+        height: 280px;
+    }
+    
+    /* Projects Section */
+    .projects-section {
+        padding: 80px 40px;
+    }
+    
+    .projects-main-title {
+        font-size: clamp(50px, 9vw, 100px);
+    }
+    
+    .category-filter {
+        right: 30px;
+    }
+    
+    /* Education Section */
+    .education-section {
+        padding: 80px 40px;
+    }
+    
+    /* General Sections */
+    section {
+        padding: 3rem 1.5rem;
+    }
+}
+
+/* Tablet Portrait (576px - 767px) */
+@media only screen and (max-width: 767px) {
+    /* Navigation */
+    .nav-links {
+        display: none;
+    }
+    
+    #hamburger-nav {
+        display: flex;
+    }
+    
+    nav {
+        padding: 20px 30px;
+        height: 70px;
+    }
+    
+    .logo {
+        font-size: 14px;
+    }
+    
+    /* Hero Section */
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 100px 30px 40px;
+        gap: 30px;
+    }
+    
+    .hero-left {
+        order: 2;
+    }
+    
+    .hero-right {
+        order: 1;
+    }
+    
+    .btn-container {
+        justify-content: center;
+    }
+    
+    .btn {
+        justify-content: center;
+    }
+    
+    .profile-container {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .profile-pic {
+        width: 250px;
+        height: 250px;
+    }
+    
+    /* Projects Section */
+    .projects-section {
+        padding: 60px 30px;
+    }
+    
+    .category-filter {
+        position: relative;
+        right: auto;
+        top: auto;
+        transform: none;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 40px;
+        padding: 0 20px;
+    }
+    
+    .filter-btn {
+        font-size: 14px;
+    }
+    
+    .project-row {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        text-align: center;
+    }
+    
+    .project-preview {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    /* Education Timeline */
+    .timeline-item {
+        width: 100%;
+        padding: 0 20px;
+        text-align: left !important;
+        left: 0 !important;
+    }
+    
+    .timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-content::before,
+    .timeline-item:nth-child(even) .timeline-content::before {
+        left: -25px;
+        right: auto;
+    }
+    
+    /* Awards & Certificates */
+    .awards-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .certificates-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .award-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    /* Contact Section */
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    /* Footer */
+    footer {
+        height: auto;
+        padding: 30px 0;
+    }
+    
+    .nav-links-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Mobile Devices (480px - 575px) */
+@media only screen and (max-width: 575px) {
+    /* Navigation */
+    nav {
+        padding: 15px 20px;
+        height: 60px;
+    }
+    
+    /* Hero Section */
+    .hero {
+        padding: 90px 20px 30px;
+    }
+    
+    .hero-title {
+        font-size: clamp(35px, 10vw, 60px);
+        letter-spacing: -2px;
+    }
+    
+    .hero-subtitle {
+        font-size: clamp(18px, 4vw, 24px);
+    }
+    
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 250px;
+    }
+    
+    .profile-container {
+        width: 240px;
+        height: 240px;
+    }
+    
+    .profile-pic {
+        width: 220px;
+        height: 220px;
+    }
+    
+    /* Projects Section */
+    .projects-section {
+        padding: 50px 20px;
+    }
+    
+    .projects-main-title {
+        font-size: clamp(35px, 12vw, 70px);
+    }
+    
+    .category-filter {
+        gap: 15px;
+    }
+    
+    .filter-btn {
+        font-size: 12px;
+    }
+    
+    /* All Sections */
+    section {
+        padding: 2rem 1rem;
+        min-height: auto;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .title {
+        font-size: 2rem;
+    }
+    
+    /* Contact Details */
+    .contact-detail-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .social-links-contact {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Small Mobile Devices (320px - 479px) */
+@media only screen and (max-width: 479px) {
+    /* Hero Section */
+    .hero {
+        padding: 80px 15px 20px;
+    }
+    
+    .hero-title {
+        font-size: clamp(30px, 12vw, 50px);
+    }
+    
+    .hero-greeting {
+        font-size: 12px;
+    }
+    
+    .profile-container {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .profile-pic {
+        width: 180px;
+        height: 180px;
+    }
+    
+    /* Projects Section */
+    .projects-section {
+        padding: 40px 15px;
+    }
+    
+    .project-popup {
+        width: 90%;
+        max-width: 300px;
+        padding: 20px;
+    }
+    
+    .popup-buttons {
+        flex-direction: column;
+    }
+    
+    /* Education */
+    .timeline-item {
+        padding: 25px 20px;
+    }
+    
+    .timeline-title {
+        font-size: 18px;
+    }
+    
+    /* Buttons */
+    .btn-primary,
+    .btn-secondary {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+    
+    .email-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+/* ========== TOUCH DEVICE OPTIMIZATIONS ========== */
+@media (hover: none) and (pointer: coarse) {
+    /* Nonaktifkan hover effects untuk perangkat touch */
+    .project-card:hover .project-card-inner,
+    .timeline-item:hover,
+    .award-item:hover,
+    .certificate-item:hover,
+    .contact-detail-item:hover {
+        transform: none;
+    }
+    
+    .btn:hover,
+    .social-icon:hover,
+    .filter-btn:hover {
+        transform: none;
+    }
+    
+    /* Optimalkan untuk touch */
+    .btn,
+    .filter-btn,
+    .nav-links a,
+    .social-icon {
+        min-height: 44px;
+        min-width: 44px;
+    }
+}
+
+/* ========== LANDSCAPE ORIENTATION ========== */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 100px 40px 40px;
+    }
+    
+    .profile-container {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .profile-pic {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .projects-section {
+        padding: 60px 20px;
+    }
+    
+    .projects-stack-container {
+        min-height: 120vh;
+    }
+}
+
+/* ========== HIGH DPI SCREENS ========== */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .profile-pic,
+    .project-image img,
+    .certificate-img img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* ========== REDUCED MOTION ========== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .profile-pic,
+    .petal,
+    .sparkle,
+    .floating-icon {
+        animation: none;
+    }
+}
+
+/* ========== DARK MODE SUPPORT ========== */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-main: #1a1a1a;
+        --text-dark: #ffffff;
+        --text-light: #cccccc;
+        --text-medium: #aaaaaa;
+        --bg-card: rgba(40, 40, 40, 0.8);
+        --border-dark: #444;
+        --border-light: rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* ========== PRINT STYLES ========== */
+@media print {
+    .floating-icon,
+    .flower-decoration,
+    .sidebar,
+    .category-filter,
+    .hamburger-menu {
+        display: none;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    .project-card-inner,
+    .timeline-content,
+    .award-item,
+    .certificate-item {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}
+
+/* ========== FIX FOR IOS SAFARI ========== */
+@supports (-webkit-touch-callout: none) {
+    .hero {
+        min-height: -webkit-fill-available;
+    }
+    
+    .profile-pic {
+        border-radius: 50%;
+    }
+}
+
+/* ========== SMOOTH SCROLLING FOR MOBILE ========== */
+@media (max-width: 767px) {
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    section {
+        scroll-margin-top: 60px;
+    }
+}
+
+/* ========== PERFORMANCE OPTIMIZATIONS FOR MOBILE ========== */
+@media (max-width: 767px) and (prefers-reduced-motion: no-preference) {
+    .petal,
+    .sparkle,
+    .floating-icon {
+        animation: none;
+        display: none;
+    }
+}
+
+/* ========== ACCESSIBILITY IMPROVEMENTS ========== */
+@media (max-width: 767px) {
+    /* Pastikan touch target cukup besar */
+    .menu-links a {
+        padding: 15px 20px;
+        min-height: 44px;
+    }
+    
+    .project-btn,
+    .filter-btn {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* ========== VERY LARGE SCREENS ========== */
+@media only screen and (min-width: 1600px) {
+    .section-container {
+        max-width: 1400px;
+    }
+    
+    .projects-section {
+        max-width: 1600px;
+    }
+}
+
+/* ========== HEIGHT-BASED MEDIA QUERIES ========== */
+@media (max-height: 600px) {
+    .hero {
+        min-height: 100vh;
+        padding: 100px 40px 40px;
+    }
+    
+    .profile-container {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .profile-pic {
+        width: 220px;
+        height: 220px;
+    }
+}
