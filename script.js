@@ -780,3 +780,50 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(section);
     });
 });
+// Function to open modal
+        function openModal(modalId) {
+            console.log('Opening modal:', modalId);
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            } else {
+                console.error('Modal not found:', modalId);
+            }
+        }
+
+        // Function to close modal
+        function closeModal(modalId) {
+            console.log('Closing modal:', modalId);
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Close modal when clicking outside the content
+        document.addEventListener('click', function(event) {
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target === modal) {
+                    closeModal(modal.id);
+                }
+            });
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const modals = document.querySelectorAll('.modal');
+                modals.forEach(modal => {
+                    if (modal.classList.contains('active')) {
+                        closeModal(modal.id);
+                    }
+                });
+            }
+        });
+
+        // Debug info
+        console.log('Script loaded successfully');
+        console.log('Available modals:', document.querySelectorAll('.modal').length);
