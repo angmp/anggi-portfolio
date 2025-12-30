@@ -1622,7 +1622,7 @@ nav {
   border: 2px solid var(--border-dark);
   border-radius: 25px;
   overflow: hidden;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-lg);
   transition: var(--transition-smooth);
 }
 
