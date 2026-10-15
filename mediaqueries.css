@@ -1,94 +1,96 @@
-/* Responsive layout and motion preferences, shared by both static pages. */
-@media (min-width: 1600px) {
-  body { max-width: 1920px; margin-inline: auto; }
-  .portrait { height: 530px; }
-}
+/* Both portfolio pages share the same responsive layout and motion preferences. */
 @media (max-width: 1000px) {
-  body > nav { gap: 20px; }
-  .nav-links { gap: 16px; font-size: 10px; }
-  .portrait { height: 360px; }
-  .hero-title { font-size: 6.5vw; }
-  .hero-intro { font-size: 15px; }
-  main > section:not(.hero), .archive-page main > section { padding: 65px 6%; }
-  .education-layout { grid-template-columns: 160px 1fr; }
-  .education-photo { width: 160px; }
-  .school-history { grid-column: 2; border-left: 0; border-top: 1px solid var(--line); padding: 20px 0 0; }
-  .job { gap: 35px; grid-template-columns: 1fr 1.25fr; }
+  .nav-links { gap: 16px; font-size: 9px; }
+  .hero-grid { gap: 5%; }
+  .portrait { height: 430px; }
+  main > section:not(.hero), .archive-page main > section { padding: 60px 6%; }
+  .education-layout { grid-template-columns: 1fr; }
+  .school-history { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 24px; }
+  .school-history .eyebrow { grid-column: 1 / -1; }
+  .school-history h3 { grid-row: span 2; margin: 8px 0 0; }
+  .school-history > p:not(.eyebrow) { text-align: right; }
+  .job { gap: 30px; grid-template-columns: 1fr 1.25fr; }
   .experience-head { grid-template-columns: 1.2fr 1fr; }
-  .project-image img { height: 220px; }
-  .project-title { font-size: 22px; }
+  .project-image img { height: 215px; }
+  .certificates-container { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   footer { flex-wrap: wrap; }
   footer nav { order: 3; width: 100%; justify-content: start; }
 }
 @media (max-width: 650px) {
-  body > nav { flex-wrap: wrap; padding: 20px 6%; gap: 18px; }
-  .logo { font-size: 32px; }
-  .nav-links { width: 100%; gap: 7px 16px; font-size: 10px; }
+  body > nav { flex-wrap: wrap; padding: 22px 6%; gap: 18px; }
+  .logo { font-size: 30px; }
+  .nav-links { width: 100%; gap: 5px 15px; font-size: 9px; }
   .nav-links a { padding: 5px 0; }
   .hero { padding: 24px 6% 0; }
-  .hero-top { display: block; font-size: 11px; }
-  .hero-top > p + p { margin-top: 7px; }
-  .eyebrow { font-size: 11px; }
-  .hero-grid { grid-template-columns: 1fr; gap: 30px; padding: 32px 0 36px; }
-  .hero-title { font-size: clamp(42px, 10.6vw, 68px); }
-  .hero-intro { margin-top: 24px; }
-  .btn-container1 { gap: 10px; }
-  .btn-container1 .btn { padding: 12px 18px; font-size: 12px; }
+  .hero-top { display: block; }
+  .hero-top > p + p { margin-top: 9px; font-size: 10px; }
+  .hero-top .eyebrow { font-size: 10px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 30px; padding: 34px 0 30px; }
+  .hero-title { font-size: clamp(43px, 11vw, 70px); }
+  .hero-intro { font-size: 14px; }
+  .internship-end { font-size: 11px; }
+  .btn-container1 { gap: 9px; }
+  .btn-container1 .btn { padding: 12px 15px; font-size: 11px; }
   .btn-container1 .btn-text { padding-left: 0; }
-  .portrait { width: 78%; height: 355px; margin: 15px auto 12px; }
-  .portrait-label { font-size: 11px; right: -26px; }
-  .hero-foot { font-size: 9px; gap: 16px; }
+  .credential-badge { margin-top: 22px; padding: 10px 12px; }
+  .credential-badge > span > span { font-size: 9px; }
+  .portrait { width: 100%; height: 410px; }
+  .hero-foot { font-size: 8px; gap: 14px; }
   .hero-foot > a { text-align: right; }
-  .rotating-accent { display: none; }
-  .ribbon > div { font-size: 14px; }
-  main > section:not(.hero), .archive-page main > section { padding: 52px 6%; }
-  .section-title { font-size: 36px; }
-  .section-subtitle { font-size: 10px; }
-  .education-layout { grid-template-columns: 1fr; gap: 24px; }
-  .education-photo { width: 219px; height: 180px; }
-  .school-history { grid-column: auto; }
-  .awards-container, .certificates-container { grid-template-columns: 1fr; gap: 20px; }
-  .award-item { padding: 26px; }
-  .award-content h3 { font-size: 22px; }
-  .experience-head, .job { grid-template-columns: 1fr; gap: 30px; }
-  .experience-company { padding: 22px; margin-right: 8px; }
-  .experience-company strong { font-size: 32px; }
-  .job { margin-top: 36px; }
-  .job h3 { font-size: 26px; }
+  main > section:not(.hero), .archive-page main > section { padding: 44px 6%; }
+  .section-title { font-size: 30px; }
+  .section-subtitle { font-size: 9px; }
+  .education-layout { gap: 14px; }
+  .education-copy { flex-wrap: wrap; padding: 22px; gap: 20px; }
+  .education-copy h3 { font-size: 20px; }
+  .education-copy .gpa { display: flex; align-items: center; justify-content: space-between; width: 100%; border-left: 0; border-top: 1px solid var(--line); padding: 18px 0 0; }
+  .gpa strong { font-size: 30px; }
+  .gpa strong span { display: inline; }
+  .school-history { display: block; padding: 22px; }
+  .school-history h3 { margin: 14px 0 7px; }
+  .school-history > p:not(.eyebrow) { text-align: left; }
+  .awards-container, .certificates-container { grid-template-columns: 1fr; gap: 16px; }
+  .award-item { padding: 24px; }
+  .award-content h3 { font-size: 20px; }
+  .experience-head, .job { grid-template-columns: 1fr; gap: 28px; }
+  .experience-company { padding: 22px; }
+  .experience-company strong { font-size: 28px; }
+  .job { margin-top: 30px; }
+  .job h3 { font-size: 24px; }
   .asset-scope { gap: 20px; }
-  .asset-scope strong { font-size: 40px; }
-  .asset-scope span { font-size: 13px; }
-  .impact-list li { font-size: 15px; }
+  .asset-scope strong { font-size: 38px; }
+  .asset-scope span { font-size: 12px; }
+  .impact-list li { font-size: 13px; }
   .project-toolbar { align-items: start; }
-  .project-toolbar p { font-size: 12px; }
-  .project-controls button { width: 40px; height: 40px; }
-  .projects-stack-container { gap: 18px; }
-  .project-card { flex-basis: 92%; }
-  .project-image img { height: 210px; }
-  .project-content { padding: 22px; }
-  .project-title { font-size: 22px; }
-  .certificate-img img { height: 190px; }
+  .project-toolbar p { font-size: 11px; }
+  .project-controls button { width: 36px; height: 36px; }
+  .projects-stack-container { gap: 16px; }
+  .project-card { flex-basis: 94%; }
+  .project-image img { height: 200px; }
+  .project-content { padding: 20px; }
+  .project-title { font-size: 20px; }
+  .certificate-img img { height: 200px; }
   .certificate-content { padding: 22px; }
   .modal { padding: 14px; }
   .modal-header, .modal-footer { padding: 16px; }
   .modal-body { padding: 18px; }
-  .modal-title { font-size: 18px; }
+  .modal-title { font-size: 17px; }
   .modal-footer { flex-wrap: wrap; }
-  .modal-footer .btn { padding: 10px 14px; font-size: 12px; }
-  .contact-section .section-title { font-size: 46px; }
+  .modal-footer .btn { padding: 10px 14px; font-size: 11px; }
+  .contact-section .section-title { font-size: 40px; }
   .social-links-contact { gap: 16px; }
-  .email-btn { width: 100%; margin: 8px 0 0; font-size: 14px; }
-  footer { font-size: 10px; gap: 16px; }
+  .email-btn { width: 100%; margin: 8px 0 0; font-size: 13px; }
+  footer { font-size: 9px; gap: 16px; }
   footer > p { max-width: 65%; }
   footer nav { gap: 12px; }
-  .projects-main-title { font-size: clamp(42px, 10vw, 65px); }
-  .project-row { grid-template-columns: minmax(0, 1fr) 44px; gap: 20px; padding: 26px 0; }
+  .projects-main-title { font-size: clamp(40px, 10vw, 65px); }
+  .project-row { grid-template-columns: minmax(0, 1fr) 40px; gap: 18px; padding: 24px 0; }
   .project-info { grid-column: 1; }
-  .project-name { font-size: 21px; margin-top: 5px; }
+  .project-name { font-size: 20px; margin-top: 5px; }
   .project-arrow { grid-column: 2; grid-row: 1; }
   .project-preview { grid-column: 1 / -1; }
   .preview-placeholder img { height: 200px; }
-  .project-popup { padding: 22px; }
+  .project-popup { padding: 20px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
