@@ -4,35 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Anggi Magdalena</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
-<body>
+<body class="archive-page">
+    <a class="skip-link" href="#main">Skip to content</a>
     <!-- Navigation -->
-    <nav>
-        <div class="logo">ANGGI MAGDALENA</div>
+    <nav aria-label="Main navigation">
+        <a class="logo" href="index.html" aria-label="Anggi home">anggi<span><svg class="star-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M20 3v34M3 20h34M8 8l24 24M8 32 32 8" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/></svg></span></a>
         <ul class="nav-links">
             <li><a href="index.html">HOME</a></li>
             <li><a href="index.html#about">ABOUT</a></li>
             <li><a href="index.html#education">EDUCATION</a></li>
-            <li><a href="projects.html" class="active">PROJECTS</a></li>
+            <li><a href="project.html" aria-current="page" class="active">PROJECTS</a></li>
             <li><a href="index.html#contact">CONTACT</a></li>
         </ul>
     </nav>
 
-    <!-- Floating Decorations -->
-    <div class="floating-icon icon-1">🌸</div>
-    <div class="floating-icon icon-2">✨</div>
-    <div class="floating-icon icon-3">🌺</div>
-
+    <main id="main">
     <!-- Projects Section -->
     <section class="projects-section">
         <div class="projects-header">
             <h1 class="projects-main-title">
-                SELECTED<br>
-                <span class="projects-subtitle-italic">PROJECTS</span>
-                <span class="projects-count">(5)</span>
+                THE PROJECT<br>
+                <span class="projects-subtitle-italic">ARCHIVE</span>
+                <span class="projects-count">(6)</span>
             </h1>
         </div>
 
@@ -48,7 +44,7 @@
                     <div class="preview-placeholder">
                         <img src="./assets/train_batch0.jpg" alt="BISINDO Hand Sign Detection Preview">
                     </div>
-                    <div class="project-popup">
+                    <div class="project-popup" id="project-details-1">
                         <div class="popup-content">
                             <h4>BISINDO Hand Sign Object Detection</h4>
                             <p>Trained an object detection model using 473 images across 19 BISINDO hand sign classes. Selected as Best Project by course lecturer with stable detection performance for static hand signs. </p>
@@ -59,14 +55,14 @@
                                 <span>Computer Vision</span>
                             </div>
                             <div class="popup-buttons">
-                                <a href="https://github.com/angmp/BISINDO-ObjectDetection-YOLOModel" target="_blank" class="popup-btn">
-                                    <i class="fab fa-github"></i> GitHub
+                                <a href="https://github.com/angmp/BISINDO-ObjectDetection-YOLOModel" target="_blank" rel="noopener noreferrer" class="popup-btn">
+                                    <i aria-hidden="true" class="fab fa-github"></i> GitHub
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a href="#" class="project-arrow">→</a>
+                <button type="button" class="project-arrow" aria-label="Show project details" aria-expanded="false" aria-controls="project-details-1">→</button>
             </div>
             <div class="project-row">
                 <div class="project-info">
@@ -77,7 +73,7 @@
                     <div class="preview-placeholder">
                         <img src="./assets/secondchance.png" alt="Second Chance Preview">
                     </div>
-                    <div class="project-popup">
+                    <div class="project-popup" id="project-details-2">
                         <div class="popup-content">
                             <h4>Second Chance - Thrift Website</h4>
                             <p>A dynamic thrift e-commerce website built using PHP, React.js, and SQL to support item listings, user authentication, and transaction management.</p>
@@ -88,17 +84,17 @@
                                 <span>SQL</span>
                             </div>
                             <div class="popup-buttons">
-                                <a href="https://github.com/angmp/SecondChance-ecommerce-php" target="_blank" class="popup-btn">
-                                    <i class="fab fa-github"></i> GitHub
+                                <a href="https://github.com/angmp/SecondChance-ecommerce-php" target="_blank" rel="noopener noreferrer" class="popup-btn">
+                                    <i aria-hidden="true" class="fab fa-github"></i> GitHub
                                 </a>
-                                <a href="https://youtu.be/j7i96drvHNs" target="_blank" class="popup-btn">
-                                    <i class="fas fa-play"></i> Demo
+                                <a href="https://youtu.be/j7i96drvHNs" target="_blank" rel="noopener noreferrer" class="popup-btn">
+                                    <i aria-hidden="true" class="fas fa-play"></i> Demo
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a href="#" class="project-arrow">→</a>
+                <button type="button" class="project-arrow" aria-label="Show project details" aria-expanded="false" aria-controls="project-details-2">→</button>
             </div>
 
             <!-- Project Row 2 -->
@@ -111,7 +107,7 @@
                     <div class="preview-placeholder">
                         <img src="./assets/image-datmod.png" alt="Species Classification Preview">
                     </div>
-                    <div class="project-popup">
+                    <div class="project-popup" id="project-details-3">
                         <div class="popup-content">
                             <h4>Species Classification – Taï National Park</h4>
                             <p>Built an AI model to classify wildlife species from camera trap images for a Data Science Competition by the Wild Chimpanzee Foundation & Max Planck Institute.</p>
@@ -122,14 +118,14 @@
                                 <span>Pandas</span>
                             </div>
                             <div class="popup-buttons">
-                                <a href="https://portofolioanggi1.my.canva.site/images-classification---species-classification-in-taiinationalpark" target="_blank" class="popup-btn">
-                                    <i class="fas fa-presentation"></i> Presentation
+                                <a href="https://portofolioanggi1.my.canva.site/images-classification---species-classification-in-taiinationalpark" target="_blank" rel="noopener noreferrer" class="popup-btn">
+                                    <i aria-hidden="true" class="fas fa-presentation"></i> Presentation
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a href="#" class="project-arrow">→</a>
+                <button type="button" class="project-arrow" aria-label="Show project details" aria-expanded="false" aria-controls="project-details-3">→</button>
             </div>
 
             <!-- Project Row 3 -->
@@ -142,7 +138,7 @@
                     <div class="preview-placeholder">
                         <img src="./assets/datvisproject.png" alt="Eco Analysis Preview">
                     </div>
-                    <div class="project-popup">
+                    <div class="project-popup" id="project-details-4">
                         <div class="popup-content">
                             <h4>Trend Analysis of Eco-Friendly Materials</h4>
                             <p>Designed an interactive Tableau dashboard to analyze the adoption of eco-friendly materials and labeling in major fashion-producing countries.</p>
@@ -152,14 +148,14 @@
                                 <span>Excel</span>
                             </div>
                             <div class="popup-buttons">
-                                <a href="https://drive.google.com/file/d/160gRQrHdrqpbUYX7hZkJv37ma5ShlL7q/view?usp=sharing" target="_blank" class="popup-btn">
-                                    <i class="fas fa-chart-line"></i> Dashboard
+                                <a href="https://drive.google.com/file/d/160gRQrHdrqpbUYX7hZkJv37ma5ShlL7q/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="popup-btn">
+                                    <i aria-hidden="true" class="fas fa-chart-line"></i> Dashboard
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a href="#" class="project-arrow">→</a>
+                <button type="button" class="project-arrow" aria-label="Show project details" aria-expanded="false" aria-controls="project-details-4">→</button>
             </div>
 
             <!-- Project Row 4 -->
@@ -172,24 +168,24 @@
                     <div class="preview-placeholder">
                         <img src="./assets/adbigdata.png" alt="Property Analytics Preview">
                     </div>
-                    <div class="project-popup">
+                    <div class="project-popup" id="project-details-5">
                         <div class="popup-content">
                             <h4>Property Price Analytics Dashboard</h4>
-                            <p>Developed an interactive Power BI dashboard to analyze property prices and identify key factors influencing pricing.</p>
+                            <p>Developed an interactive Power BI dashboard using SQL and Excel to analyze 1,000+ property records, explore price trends, and identify key factors influencing pricing.</p>
                             <div class="popup-tech">
                                 <span>Power BI</span>
                                 <span>SQL</span>
                                 <span>Excel</span>
                             </div>
                             <div class="popup-buttons">
-                                <a href="https://app.powerbi.com/links/fSV9nSoraf" target="_blank" class="popup-btn">
-                                    <i class="fas fa-chart-bar"></i> Dashboard
+                                <a href="https://app.powerbi.com/links/fSV9nSoraf" target="_blank" rel="noopener noreferrer" class="popup-btn">
+                                    <i aria-hidden="true" class="fas fa-chart-bar"></i> Dashboard
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a href="#" class="project-arrow">→</a>
+                <button type="button" class="project-arrow" aria-label="Show project details" aria-expanded="false" aria-controls="project-details-5">→</button>
             </div>
 
             <!-- Project Row 5 -->
@@ -202,9 +198,9 @@
                     <div class="preview-placeholder">
                         <img src="./assets/java-pic.png" alt="Diet Program Preview">
                     </div>
-                    <div class="project-popup">
+                    <div class="project-popup" id="project-details-6">
                         <div class="popup-content">
-                            <h4>Program Diet - Java</h4>
+                            <h4>CTRL+EAT / Program Diet - Java</h4>
                             <p>Java-based system designed to promote a healthy lifestyle by providing daily nutritional intake recommendations.</p>
                             <div class="popup-tech">
                                 <span>Java</span>
@@ -212,23 +208,25 @@
                                 <span>CRUD</span>
                             </div>
                             <div class="popup-buttons">
-                                <a href="https://github.com/angmp/ProgramDiet_Java" target="_blank" class="popup-btn">
-                                    <i class="fab fa-github"></i> GitHub
+                                <a href="https://github.com/angmp/ProgramDiet_Java" target="_blank" rel="noopener noreferrer" class="popup-btn">
+                                    <i aria-hidden="true" class="fab fa-github"></i> GitHub
                                 </a>
-                                <a href="https://drive.google.com/file/d/1z9Uk9uXpLhC7-tZvg1EHjiFIuGjqq1rj/view?usp=sharing" target="_blank" class="popup-btn">
-                                    <i class="fas fa-video"></i> Demo
+                                <a href="https://drive.google.com/file/d/1z9Uk9uXpLhC7-tZvg1EHjiFIuGjqq1rj/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="popup-btn">
+                                    <i aria-hidden="true" class="fas fa-video"></i> Demo
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a href="#" class="project-arrow">→</a>
+                <button type="button" class="project-arrow" aria-label="Show project details" aria-expanded="false" aria-controls="project-details-6">→</button>
             </div>
         </div>
     </section>
 
     
 
-    <script src="projects-script.js"></script>
+    </main>
+    <footer><p>© 2026 Anggi Magdalena Panjaitan</p><a href="index.html#contact">Let’s talk <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="index.html">Back to portfolio ↑</a></footer>
+    <script src="script.js"></script>
 </body>
 </html>

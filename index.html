@@ -3,126 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anggi Magdalena - Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Anggi Magdalena Panjaitan — Data &amp; Business Intelligence</title>
+    <meta name="description" content="Data &amp; Business Intelligence portfolio of Anggi Magdalena Panjaitan. Explore analytics projects, KPN Corp experience, and opportunities to work together.">
+    <meta name="theme-color" content="#ffcc6e">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <!-- Navigation -->
-    <nav>
-        <div class="logo">ANGGI MAGDALENA PANJAITAN</div>
+    <nav aria-label="Main navigation">
+        <a class="logo" href="index.html" aria-label="Anggi home">anggi<span><svg class="star-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M20 3v34M3 20h34M8 8l24 24M8 32 32 8" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/></svg></span></a>
         <ul class="nav-links">
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#education">EDUCATION</a></li>
             <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#awards">AWARDS</a></li>
             <li><a href="#projects">PROJECTS</a></li>
             <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
 
-    <!-- Floating Decorations -->
-    <div class="floating-icon icon-1">🌸</div>
-    <div class="floating-icon icon-2">✨</div>
-    <div class="floating-icon icon-3">🌺</div>
-
+    <main id="main">
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-left">
-            <p class="hero-greeting">HELLO, I'M</p>
-            <h1 class="hero-title">Anggi<br>Magdalena Panjaitan</h1>
-            <p class="hero-subtitle">Undergraduate Information System Student</p>
-            
-            <div class="btn-container1">
-                <button class="btn btn-primary" onclick="window.open('./assets/CV_ANGGI_MAGDALENA_PANJAITAN.pdf')">
-                    <i class="fas fa-download"></i> Download CV
-                </button>
-                <button class="btn btn-secondary" onclick="location.href='#contact'">
-                    <i class="fas fa-envelope"></i> Contact Info
-                </button>
+    <section id="about" class="hero">
+        <div class="hero-top"><p class="eyebrow">DATA &amp; BUSINESS INTELLIGENCE</p><p>Open to full-time &amp; freelance opportunities</p></div>
+        <div class="hero-grid">
+            <div class="hero-left">
+                <h1 class="hero-title">Curious mind.<br>Clear <em>insights.</em></h1>
+                <div class="hero-intro"><p>Hi, I’m <strong>Anggi Magdalena Panjaitan.</strong><br>Currently interning at <strong>KPN Corp</strong> as an <strong>IT Engineer Intern (Business Intelligence &amp; Analytics).</strong></p>
+                <p class="internship-end">Internship expected to end in <strong>February 2027.</strong></p></div>
+                <div class="btn-container1">
+                    <a class="btn btn-primary" href="#projects">Explore my work <span aria-hidden="true"><svg class="arrow-icon arrow-down" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+                    <a class="btn btn-secondary" href="./assets/CV_ANGGI_MAGDALENA_PANJAITAN.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
+                    <button class="btn btn-text" onclick="location.href='#contact'">Contact Info <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                </div>
+                <div class="socials-container">
+                <a class="social-icon" href="https://linkedin.com/in/anggimagdalena" aria-label="LinkedIn">
+                    <i aria-hidden="true" class="fab fa-linkedin-in"></i>
+                </a>
+                <a class="social-icon" href="https://github.com/angmp" aria-label="GitHub">
+                    <i aria-hidden="true" class="fab fa-github"></i>
+                </a>
+                <a class="social-icon" href="https://www.instagram.com/angmp.z?igsh=ZGNxc2QzOGp0bXBl" aria-label="Instagram">
+                    <i aria-hidden="true" class="fab fa-instagram"></i>
+                </a>
             </div>
-
-            <div class="socials-container">
-                <div class="social-icon" onclick="location.href='https://linkedin.com/in/anggimagdalena'">
-                    <i class="fab fa-linkedin-in"></i>
-                </div>
-                <div class="social-icon" onclick="location.href='https://github.com/angmp'">
-                    <i class="fab fa-github"></i>
-                </div>
-                <div class="social-icon" onclick="location.href='https://www.instagram.com/angmp.z?igsh=ZGNxc2QzOGp0bXBl'">
-                    <i class="fab fa-instagram"></i>
-                </div>
             </div>
+            <figure class="hero-right portrait">
+                <img src="./assets/profile-pic.png" alt="Anggi Magdalena Panjaitan" class="profile-pic" width="400" height="440" fetchpriority="high">
+                <figcaption>Analytical by nature. Curious by choice.</figcaption>
+                <span class="portrait-label">A little data.<br>A lot of possibility.</span>
+            </figure>
         </div>
-
-        <div class="hero-right">
-            <div class="profile-container">
-                <!-- Ganti src dengan path foto Anda -->
-                <img src="./assets/profile-pic.png" alt="Anggi Magdalena" class="profile-pic">
-                
-                <div class="flower-decoration">
-                    <div class="petal"></div>
-                    <div class="petal"></div>
-                    <div class="petal"></div>
-                    <div class="petal"></div>
-                    <div class="petal"></div>
-                </div>
-
-                <div class="sparkle sparkle-1">✦</div>
-                <div class="sparkle sparkle-2">✦</div>
-                <div class="sparkle sparkle-3">✦</div>
-            </div>
-        </div>
+        <div class="hero-foot"><span>BASED IN INDONESIA · OPEN TO REMOTE</span><a href="#education">SCROLL TO DISCOVER ↓</a><span class="rotating-accent" aria-hidden="true"><svg class="star-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M20 3v34M3 20h34M8 8l24 24M8 32 32 8" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/></svg></span></div>
     </section>
+    <div class="ribbon" aria-hidden="true"><div>DATA WITH DIRECTION <span><svg class="star-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M20 3v34M3 20h34M8 8l24 24M8 32 32 8" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/></svg></span> INSIGHTS WITH IMPACT <span><svg class="star-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M20 3v34M3 20h34M8 8l24 24M8 32 32 8" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/></svg></span> DATA WITH DIRECTION <span><svg class="star-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M20 3v34M3 20h34M8 8l24 24M8 32 32 8" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/></svg></span> INSIGHTS WITH IMPACT <span><svg class="star-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M20 3v34M3 20h34M8 8l24 24M8 32 32 8" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/></svg></span></div></div>
 
     <!-- Education Section -->
-    <section id="education" class="education-section">
-        <div class="section-header">
-            <p class="section-subtitle">✦ EXPLORE MY</p>
-            <h2 class="section-title">Education</h2>
-        </div>
-
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-year">2023 - 2027 (EXPECTED)</div>
-                    <h3 class="timeline-title">Majoring in Information System</h3>
-                    <p class="timeline-institution">Multimedia Nusantara University</p>
-                    <p class="timeline-description">GPA: 3.8/4.0</p>
-                </div>
-                <div class="timeline-icon">🎓</div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-year">2017 - 2020</div>
-                    <h3 class="timeline-title">High School Diploma</h3>
-                    <p class="timeline-institution">St. Albertus Malang</p>
-                    <p class="timeline-description">Avg Score: 8.5/10.0 | Focus on Science</p>
-                </div>
-                <div class="timeline-icon">📚</div>
-            </div>
+    <section id="education" class="education-section section">
+        <div class="section-header"><p class="section-subtitle">01 / EDUCATION</p><h2 class="section-title">Behind every number,<br>there’s a <em>better question.</em></h2></div>
+        <div class="education-layout reveal">
+            <img class="education-photo" src="./assets/umn-campus.png" alt="Universitas Multimedia Nusantara campus buildings" width="219" height="180" loading="lazy">
+            <div class="education-copy"><h3>Universitas Multimedia Nusantara</h3><p>Bachelor of Information Systems</p><p class="education-period">2023 – Expected graduation: February 2027</p><p class="gpa"><strong>3.84</strong> / 4.00 <span>GPA</span></p></div>
+            <div class="school-history"><p class="eyebrow">EARLIER EDUCATION</p><h3>St. Albertus Malang</h3><p>High School Diploma · 2017 – 2020</p><p>Avg Score: 8.5/10.0 | Focus on Science</p></div>
         </div>
     </section>
 
-    <script src="script.js"></script>
 
-  
 
+
+
+<section id="awards" class="awards-section">
+    <p class="section-subtitle">02 / ACHIEVEMENTS</p>
+    <h2 class="section-title">Small steps.<br><em>Standout results.</em></h2>
+    <div class="section-container">
+        <div class="awards-container">
+            <div class="award-item reveal">
+                <div class="award-icon">
+                    <i aria-hidden="true" class="fas fa-trophy"></i>
+                </div>
+                <div class="award-content">
+                    <h3>CTRL+EAT — 1st Winner, Algorithm &amp; Programming</h3>
+                    <p class="award-organization">Multimedia Nusantara University  - Information System Exhibition</p>
+                    <p class="award-date">February 2024</p>
+                    <p>Group-based internal competition held by the Information Systems Student Association. The project involved developing CTRL+EAT, a healthy lifestyle system using Java, featuring food recommendations based on daily calorie needs calculated from BMI.</p>
+                </div>
+            </div>
+
+            <div class="award-item reveal">
+                <div class="award-icon">
+                    <i aria-hidden="true" class="fas fa-award"></i>
+                </div>
+                <div class="award-content">
+                    <h3>Top 17% (252nd out of 1,520 teams) – DrivenData: Wildlife Conservation Image Classification Challenge</h3>
+                    <p class="award-organization">DrivenData Competition</p>
+                    <p class="award-date">May 2025</p>
+                    <p>Achieved strong performance in a wildlife conservation image classification challenge by developing and fine-tuning deep learning models (DeiT, ViT, EfficientNet). The EfficientNet model achieved a log loss of 2.6807, ranking the team in the top 17% of 1,520 teams while classifying seven rare animal species.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="experience" class="experience-section section">
+        <p class="section-subtitle">03 / WORK EXPERIENCE</p>
+        <div class="experience-head reveal"><h2 class="section-title">Better visibility.<br><em>Less manual work.</em></h2><div class="experience-company"><span>INTERNSHIP AT</span><strong>KPN Corp</strong><p>South Jakarta, Indonesia</p></div></div>
+        <div class="job reveal"><div class="job-profile"><span class="tag">FEBRUARY 2026 – PRESENT</span><h3>IT Engineer Intern</h3><p>Business Intelligence &amp; Analytics</p><p class="job-end">Expected completion: February 2027</p></div>
+        <div class="job-results"><p class="asset-scope"><strong>1,000+</strong><span>IT assets supported with improved service management and asset visibility.</span></p>
+        <ul class="impact-list"><li><strong>Faster issue identification.</strong> Made SLA performance, ticket trends, and technician workload visible to help IT teams identify service bottlenecks.</li><li><strong>Less manual reporting.</strong> Automated recurring operational reports, improving consistency, accuracy, and access for IT teams and management.</li><li><strong>Clearer operational decisions.</strong> Delivered real-time helpdesk and asset insights through Metabase dashboards connected to GLPI data.</li></ul></div></div>
+    </section>
 <!-- Projects Section -->
     <section id="projects" class="projects-section">
         <div class="section-header">
-            <p class="section-subtitle">✦ BROWSE MY RECENT</p>
-            <h1 class="section-title">Projects</h1>
+            <p class="section-subtitle">04 / PROJECTS</p>
+            <h2 class="section-title">Built with curiosity.<br><em>Backed by data.</em></h2>
         </div>
         <div class="view-all-container">
                 <button class="view-all-btn" onclick="location.href='project.html'">
-                    View All Projects <i class="fas fa-arrow-right"></i>
+                    View All Projects <i aria-hidden="true" class="fas fa-arrow-right"></i>
                 </button>
             </div>
 
-       
-        <div class="projects-stack-container">
+
+        <div class="project-toolbar"><p>Six projects. Different questions. Practical outcomes.</p><div class="project-controls"><button type="button" data-project-direction="-1" aria-label="Previous projects" aria-controls="project-track">←</button><button type="button" data-project-direction="1" aria-label="Next projects" aria-controls="project-track">→</button></div></div>
+        <div id="project-track" class="projects-stack-container" tabindex="0" role="region" aria-label="Portfolio projects. Swipe or use the arrow buttons to explore.">
             <!-- Project Card 1 -->
             <div class="project-card" data-index="1" data-category="Web Development">
                 <div class="project-card-inner">
@@ -145,10 +150,10 @@
                         </div>
                         <div class="project-buttons">
                             <button class="project-btn btn-github" onclick="location.href='https://github.com/angmp/SecondChance-ecommerce-php'">
-                                <i class="fab fa-github"></i> GitHub
+                                <i aria-hidden="true" class="fab fa-github"></i> GitHub
                             </button>
                             <button class="project-btn btn-demo" onclick="location.href='https://youtu.be/j7i96drvHNs'">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
+                                <i aria-hidden="true" class="fas fa-external-link-alt"></i> Live Demo
                             </button>
                         </div>
                     </div>
@@ -177,7 +182,7 @@
                         </div>
                         <div class="project-buttons">
                             <button class="project-btn btn-demo" onclick="location.href='https://portofolioanggi1.my.canva.site/images-classification---species-classification-in-taiinationalpark'">
-                                <i class="fas fa-presentation"></i> View Presentation
+                                <i aria-hidden="true" class="fas fa-presentation"></i> View Presentation
                             </button>
                         </div>
                     </div>
@@ -205,7 +210,7 @@
                         </div>
                         <div class="project-buttons">
                             <button class="project-btn btn-demo" onclick="location.href='https://drive.google.com/file/d/160gRQrHdrqpbUYX7hZkJv37ma5ShlL7q/view?usp=sharing'">
-                                <i class="fas fa-chart-line"></i> View Demo
+                                <i aria-hidden="true" class="fas fa-chart-line"></i> View Demo
                             </button>
                         </div>
                     </div>
@@ -224,7 +229,7 @@
                     <div class="project-content">
                         <h3 class="project-title">Property Price Analytics Dashboard</h3>
                         <p class="project-description">
-                            Developed an interactive Power BI dashboard to analyze property prices and identify key factors influencing pricing.
+                            Developed an interactive Power BI dashboard using SQL and Excel to analyze 1,000+ property records, explore price trends, and identify key factors influencing pricing.
                         </p>
                         <div class="tech-stack">
                             <span class="tech-tag">Power BI</span>
@@ -233,7 +238,7 @@
                         </div>
                         <div class="project-buttons">
                             <button class="project-btn btn-demo" onclick="location.href='https://app.powerbi.com/links/fSV9nSoraf'">
-                                <i class="fas fa-chart-bar"></i> View Dashboard
+                                <i aria-hidden="true" class="fas fa-chart-bar"></i> View Dashboard
                             </button>
                         </div>
                     </div>
@@ -250,7 +255,7 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Program Diet - Java</h3>
+                        <h3 class="project-title">CTRL+EAT / Program Diet - Java</h3>
                         <p class="project-description">
                             Java-based system designed to promote a healthy lifestyle by providing daily nutritional intake recommendations.
                         </p>
@@ -261,16 +266,16 @@
                         </div>
                         <div class="project-buttons">
                             <button class="project-btn btn-github" onclick="location.href='https://github.com/angmp/ProgramDiet_Java'">
-                                <i class="fab fa-github"></i> GitHub
+                                <i aria-hidden="true" class="fab fa-github"></i> GitHub
                             </button>
                             <button class="project-btn btn-demo" onclick="location.href='https://drive.google.com/file/d/1z9Uk9uXpLhC7-tZvg1EHjiFIuGjqq1rj/view?usp=sharing'">
-                                <i class="fas fa-video"></i> View Demo
+                                <i aria-hidden="true" class="fas fa-video"></i> View Demo
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="project-card" data-index="5" data-category="Computer Vision">
+            <div class="project-card" data-index="6" data-category="Computer Vision">
                 <div class="project-card-inner">
                     <div class="project-image">
                         <img src="./assets/train_batch0.jpg" alt="BISINDO Hand Sign Detection">
@@ -281,7 +286,7 @@
                     <div class="project-content">
                         <h3 class="project-title">BISINDO Hand Sign Object Detection 🏆</h3>
                         <p class="project-description">
-                            
+
                             Trained an object detection model using 473 images across 19 BISINDO hand sign classes. Selected as Best Project by course lecturer with stable detection performance for static hand signs.
                         </p>
                         <div class="tech-stack">
@@ -292,63 +297,33 @@
                         </div>
                         <div class="project-buttons">
                             <button class="project-btn btn-github" onclick="location.href='https://github.com/angmp/BISINDO-ObjectDetection-YOLOModel'">
-                                <i class="fab fa-github"></i> GitHub
+                                <i aria-hidden="true" class="fab fa-github"></i> GitHub
                             </button>
-                          
+
                         </div>
                     </div>
                 </div>
             </div>
             <!-- View All Projects Button -->
-            
+
         </div>
     </section>
 <!-- Awards Section -->
-<section id="awards" class="awards-section">
-    <p class="section-subtitle">My Achievements</p>
-    <h1 class="section-title">Awards & Honors</h1>
-    <div class="section-container">
-        <div class="awards-container">
-            <div class="award-item">
-                <div class="award-icon">
-                    <i class="fas fa-trophy"></i>
-                </div>
-                <div class="award-content">
-                    <h3>Winner of Algorithm and Programming</h3>
-                    <p class="award-organization">Multimedia Nusantara University  - Information System Exhibition</p>
-                    <p class="award-date">February 2024</p>
-                    <p>Group-based internal competition held by the Information Systems Student Association. The project involved developing a healthy lifestyle system using Java, featuring food recommendations based on daily calorie needs calculated from BMI.</p>
-                </div>
-            </div>
 
-            <div class="award-item">
-                <div class="award-icon">
-                    <i class="fas fa-award"></i>
-                </div>
-                <div class="award-content">
-                    <h3>Top 17% (252nd out of 1,520 participants) – Kaggle: Wildlife Conservation Image Classification Challenge</h3>
-                    <p class="award-organization">Kaggle Competition</p>
-                    <p class="award-date">May 2025</p>
-                    <p>Achieved strong performance in a wildlife conservation image classification challenge by developing and fine-tuning deep learning models (DeiT, ViT, EfficientNet). The EfficientNet model achieved a log loss of 2.6807, ranking the team in the top 17% of participants.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- Certificates Section -->
     <section id="certificates" class="certificates-section">
-        <p class="section-subtitle">My Certifications</p>
-        <h1 class="section-title">Certificates</h1>
+        <p class="section-subtitle">05 / CERTIFICATES</p>
+        <h2 class="section-title">Learning, put<br><em>into practice.</em></h2>
         <div class="certificates-container">
             <!-- Certificate 1 -->
-            <div class="certificate-item">
+            <div class="certificate-item reveal">
                 <div class="certificate-img">
                     <!-- Ganti dengan path gambar yang benar -->
-                    <img src="./assets/sertifikat-seminar.png" alt="Python Certificate" 
+                    <img src="./assets/sertifikat-seminar.png" alt="Python Certificate"
                          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                     <div class="img-placeholder" style="display: none;">
-                        <i class="fas fa-certificate"></i> Certificate Image
+                        <i aria-hidden="true" class="fas fa-certificate"></i> Certificate Image
                     </div>
                 </div>
                 <div class="certificate-content">
@@ -356,19 +331,19 @@
                     <p class="certificate-issuer">Universitas Multimedia Nusantara</p>
                     <p class="certificate-date">Issued: May 2025</p>
                     <button class="btn btn-view" onclick="openModal('modal1')">
-                        <i class="fas fa-eye"></i> View Certificate
+                        <i aria-hidden="true" class="fas fa-eye"></i> View Certificate
                     </button>
                 </div>
             </div>
 
             <!-- Certificate 2 -->
-            <div class="certificate-item">
+            <div class="certificate-item reveal">
                 <div class="certificate-img">
                     <!-- Ganti dengan path gambar yang benar -->
-                    <img src="./assets/sertifikat-java.png" alt="1st Place – Algorithm and Programming Competition" 
+                    <img src="./assets/sertifikat-java.png" alt="1st Place – Algorithm and Programming Competition"
                          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                     <div class="img-placeholder" style="display: none;">
-                        <i class="fas fa-trophy"></i> Competition Certificate
+                        <i aria-hidden="true" class="fas fa-trophy"></i> Competition Certificate
                     </div>
                 </div>
                 <div class="certificate-content">
@@ -376,7 +351,7 @@
                     <p class="certificate-issuer">Universitas Multimedia Nusantara</p>
                     <p class="certificate-date">Issued: February 2024</p>
                     <button class="btn btn-view" onclick="openModal('modal2')">
-                        <i class="fas fa-eye"></i> View Certificate
+                        <i aria-hidden="true" class="fas fa-eye"></i> View Certificate
                     </button>
                 </div>
             </div>
@@ -384,12 +359,12 @@
     </section>
 
     <!-- Modal 1 -->
-    <div id="modal1" class="modal">
+    <div id="modal1" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal1-title" aria-hidden="true">
         <div class="modal-content">
             <div class="modal-header">
-                <h2 class="modal-title">Certificate Details</h2>
-                <button class="close-modal" onclick="closeModal('modal1')">
-                    <i class="fas fa-times"></i>
+                <h2 id="modal1-title" class="modal-title">Certificate Details</h2>
+                <button class="close-modal" aria-label="Close certificate" onclick="closeModal('modal1')">
+                    <i aria-hidden="true" class="fas fa-times"></i>
                 </button>
             </div>
             <div class="modal-body">
@@ -397,7 +372,7 @@
                 <img src="./assets/sertifikat-seminar.png" alt="Python Certificate" class="certificate-preview"
                      onerror="this.style.display='none'; document.getElementById('placeholder1').style.display='flex'">
                 <div id="placeholder1" class="img-placeholder" style="display: none; height: 300px;">
-                    <i class="fas fa-certificate"></i> Certificate Preview
+                    <i aria-hidden="true" class="fas fa-certificate"></i> Certificate Preview
                 </div>
                 <div class="certificate-details">
                     <h4>Speaker – National Seminar UMN 2025: Environmental Data Analysis with Python</h4>
@@ -408,23 +383,23 @@
             </div>
             <div class="modal-footer">
                 <!-- Ganti dengan path PDF yang benar -->
-                <a href="./assets/sertifikat-seminar.pdf" class="btn btn-download" download>
-                    <i class="fas fa-download"></i> Download PDF
+                <a href="./assets/sertifikat-seminar.png" class="btn btn-download" download>
+                    <i aria-hidden="true" class="fas fa-download"></i> Download Certificate
                 </a>
                 <button class="btn btn-close" onclick="closeModal('modal1')">
-                    <i class="fas fa-times"></i> Close
+                    <i aria-hidden="true" class="fas fa-times"></i> Close
                 </button>
             </div>
         </div>
     </div>
 
     <!-- Modal 2 -->
-    <div id="modal2" class="modal">
+    <div id="modal2" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal2-title" aria-hidden="true">
         <div class="modal-content">
             <div class="modal-header">
-                <h2 class="modal-title">Certificate Details</h2>
-                <button class="close-modal" onclick="closeModal('modal2')">
-                    <i class="fas fa-times"></i>
+                <h2 id="modal2-title" class="modal-title">Certificate Details</h2>
+                <button class="close-modal" aria-label="Close certificate" onclick="closeModal('modal2')">
+                    <i aria-hidden="true" class="fas fa-times"></i>
                 </button>
             </div>
             <div class="modal-body">
@@ -432,7 +407,7 @@
                 <img src="./assets/sertifikat-java.png" alt="1st Place – Algorithm and Programming Competition" class="certificate-preview"
                      onerror="this.style.display='none'; document.getElementById('placeholder2').style.display='flex'">
                 <div id="placeholder2" class="img-placeholder" style="display: none; height: 300px;">
-                    <i class="fas fa-trophy"></i> Competition Certificate
+                    <i aria-hidden="true" class="fas fa-trophy"></i> Competition Certificate
                 </div>
                 <div class="certificate-details">
                     <h4>1st Place – Algorithm and Programming Competition (IS-EXHIBITION)</h4>
@@ -443,11 +418,11 @@
             </div>
             <div class="modal-footer">
                 <!-- Ganti dengan path PDF yang benar -->
-                <a href="./assets/certificate-2.pdf" class="btn btn-download" download>
-                    <i class="fas fa-download"></i> Download PDF
+                <a href="./assets/sertifikat-java.png" class="btn btn-download" download>
+                    <i aria-hidden="true" class="fas fa-download"></i> Download Certificate
                 </a>
                 <button class="btn btn-close" onclick="closeModal('modal2')">
-                    <i class="fas fa-times"></i> Close
+                    <i aria-hidden="true" class="fas fa-times"></i> Close
                 </button>
             </div>
         </div>
@@ -456,55 +431,37 @@
 
 <!-- Contact Section -->
 <section id="contact" class="contact-section">
-    <p class="section-subtitle">Get in Touch</p>
-    <h1 class="section-title">Contact Me</h1>
+    <p class="section-subtitle">06 / WHAT’S NEXT?</p>
+    <h2 class="section-title">Good things start<br>with <em>a hello.</em></h2>
 
     <div class="contact-container">
         <!-- Contact Information -->
         <div class="contact-info">
-            <h2>Let's Connect! <i class="fas fa-handshake"></i></h2>
+            <h3>Let’s connect!</h3>
             <p>I'm always open to discussing new opportunities, creative projects, or just having a friendly chat about technology and innovation.</p>
 
             <div class="social-links-contact">
-                <a href="https://www.linkedin.com/in/anggimagdalena" class="social-link" target="_blank">
-                    <i class="fab fa-linkedin-in"></i>
+                <a href="https://www.linkedin.com/in/anggimagdalena" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <i aria-hidden="true" class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="https://github.com/angmp" class="social-link" target="_blank">
-                    <i class="fab fa-github"></i>
+                <a href="https://github.com/angmp" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                    <i aria-hidden="true" class="fab fa-github"></i>
                 </a>
-                <a href="https://www.instagram.com/angmp.z?igsh=ZGNxc2QzOGp0bXBl" class="social-link" target="_blank">
-                    <i class="fab fa-instagram"></i>
+                <a href="https://www.instagram.com/angmp.z?igsh=ZGNxc2QzOGp0bXBl" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                    <i aria-hidden="true" class="fab fa-instagram"></i>
                 </a><br><a href="mailto:anggimagdalena0@gmail.com" class="email-btn">
-            <i class="fas fa-envelope"></i> anggimagdalena0@gmail.com
-        </a> 
+            <i aria-hidden="true" class="fas fa-envelope"></i> anggimagdalena0@gmail.com
+        </a>
     </div>
 
-            <div class="contact-success" id="contactSuccess">
-                <i class="fas fa-check-circle" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
-                <h3>Thank You!</h3>
-                <p>Your message has been sent successfully. I'll get back to you soon!</p>
-            </div>
+
         </div>
     </div>
-</section>
 </section>
 
     <!-- Footer -->
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#awards">Awards</a></li>
-            <li><a href="#certificates">Certificates</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2023 Anggi Magdalena. All Rights Reserved.</p>
-    </footer>
+    </main>
+    <footer><p>© 2026 Anggi Magdalena Panjaitan</p><nav aria-label="Footer navigation"><a href="#education">Education</a><a href="#projects">Projects</a><a href="#awards">Awards</a><a href="#certificates">Certificates</a><a href="#contact">Contact</a></nav><a href="#about">Back to top ↑</a></footer>
 
     <script src="script.js"></script>
   </body>
