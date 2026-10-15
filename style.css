@@ -92,16 +92,13 @@ main > section:not(.hero), .archive-page main > section { padding: 72px 6%; bord
 .award-content > p:last-child { color: var(--muted); font-size: 13px; }
 .experience-section { background: var(--ink); color: white; }
 .experience-section .section-subtitle, .experience-section .section-title em { color: #fa8acb; }
-.experience-head { display: grid; grid-template-columns: 1.5fr 1fr; gap: 40px; align-items: center; }
-.experience-company { padding: 24px; border: 1px solid #45454f; border-radius: 12px; background: #262630; }
-.experience-company span { display: block; color: #bdbdc7; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; }
-.experience-company strong { display: block; font-size: 30px; line-height: 1.2; letter-spacing: -1px; margin-top: 10px; }
-.experience-company p { color: #bdbdc7; font-size: 12px; margin-top: 8px; }
+.experience-head { max-width: 800px; }
 .job { display: grid; grid-template-columns: 1fr 1.5fr; gap: 60px; border-top: 1px solid #45454f; padding-top: 32px; margin-top: 38px; }
 .job-profile { border-left: 2px solid var(--magenta); padding-left: 20px; }
 .tag { display: inline-block; color: #dedee5; font-size: 10px; border: 1px solid #55555e; border-radius: 5px; padding: 6px 10px; }
 .job h3 { font-size: 25px; line-height: 1.2; margin: 22px 0 10px; letter-spacing: -.5px; }
 .job-profile > p { color: #fa8acb; font-size: 14px; }
+.job-profile .job-company { margin: 0 0 14px; color: #dedee5; font-size: 12px; font-weight: 400; }
 .job-profile .job-end { color: #bdbdc7; font-size: 12px; margin-top: 18px; }
 .asset-scope { display: flex; gap: 24px; align-items: center; }
 .asset-scope strong { font-size: 44px; color: #fa8acb; letter-spacing: -2px; white-space: nowrap; }
@@ -188,3 +185,11 @@ footer a:hover { color: var(--magenta); }
 .arrow-icon { display: inline-block; width: 1.1em; height: 1.1em; vertical-align: middle; flex-shrink: 0; }
 .arrow-down { transform: rotate(90deg); }
 .star-icon { display: inline-block; width: 1em; height: 1em; vertical-align: middle; }
+
+/* A compact toolkit row bridges the landing page and the content below. */
+.tool-strip { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 28px; align-items: center; padding: 26px 6%; border-top: 1px solid var(--line); }
+.tool-strip > p { color: var(--muted); font-size: 9px; font-weight: 700; letter-spacing: 1.4px; }
+.tool-list { display: flex; align-items: center; justify-content: space-between; gap: 28px; list-style: none; margin: 0; padding: 8px 2px; overflow-x: auto; scrollbar-width: thin; scrollbar-color: var(--magenta) var(--surface); }
+.tool-list li { display: flex; align-items: center; gap: 9px; flex-shrink: 0; color: var(--muted); font-size: 12px; font-weight: 600; }
+.tool-list img { width: 28px; height: 28px; object-fit: contain; flex-shrink: 0; }
+.tool-list li:hover { color: var(--magenta); }
