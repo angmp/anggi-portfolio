@@ -316,6 +316,25 @@
         <p class="section-subtitle">05 / CERTIFICATES</p>
         <h2 class="section-title">Learning, put<br><em>into practice.</em></h2>
         <div class="certificates-container">
+            <!-- CISDV certification: details transcribed from the original certificate. -->
+            <article class="certificate-item reveal">
+                <div class="certificate-img">
+                    <img src="./assets/cisdv-anggi-magdalena-panjaitan.png"
+                         alt="CISDV Foundation certificate awarded to Anggi Magdalena Panjaitan by PASAS Institute"
+                         width="990" height="1400" loading="lazy">
+                </div>
+                <div class="certificate-content">
+                    <h3>Certified International Specialist in Data Visualisation (Foundation)</h3>
+                    <p class="certificate-issuer">PASAS Institute, Singapore</p>
+                    <p class="certificate-date">Issued: <time datetime="2026-09-28">28 September 2026</time></p>
+                    <p class="certificate-date">Expires: <time datetime="2029-09-30">30 September 2029</time></p>
+                    <p class="certificate-date">Credential ID: CISDV158910</p>
+                    <button type="button" class="btn btn-view" onclick="openModal('modal-cisdv')" aria-haspopup="dialog" aria-controls="modal-cisdv">
+                        View Certificate
+                    </button>
+                </div>
+            </article>
+
             <!-- Certificate 1 -->
             <div class="certificate-item reveal">
                 <div class="certificate-img">
@@ -357,6 +376,33 @@
             </div>
         </div>
     </section>
+
+    <!-- CISDV certificate preview and original PDF download. -->
+    <div id="modal-cisdv" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-cisdv-title" aria-hidden="true">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-cisdv-title" class="modal-title">CISDV Foundation Certificate</h2>
+                <button type="button" class="close-modal" aria-label="Close certificate" onclick="closeModal('modal-cisdv')"></button>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/cisdv-anggi-magdalena-panjaitan.png"
+                     alt="Original PASAS Institute CISDV Foundation certificate for Anggi Magdalena Panjaitan, credential CISDV158910"
+                     class="certificate-preview" width="990" height="1400">
+                <div class="certificate-details">
+                    <h4>Certified International Specialist in Data Visualisation (Foundation)</h4>
+                    <p><strong>Recipient:</strong> Anggi Magdalena Panjaitan</p>
+                    <p><strong>Issuer:</strong> PASAS Institute, Singapore</p>
+                    <p><strong>Issued:</strong> <time datetime="2026-09-28">28 September 2026</time></p>
+                    <p><strong>Expires:</strong> <time datetime="2029-09-30">30 September 2029</time></p>
+                    <p><strong>Credential ID:</strong> CISDV158910</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="./assets/cisdv-anggi-magdalena-panjaitan.pdf" class="btn btn-download" download>Download Certificate (PDF)</a>
+                <button type="button" class="btn btn-close" onclick="closeModal('modal-cisdv')">Close</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Modal 1 -->
     <div id="modal1" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal1-title" aria-hidden="true">
